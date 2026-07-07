@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "type": "promptString",
+      "id": "alphavantage-api-key",
+      "description": "Alpha Vantage API key",
+      "password": true
+    }
+  ],
+  "servers": {
+    "alphavantage": {
+      "type": "http",
+      "url": "https://mcp.alphavantage.co/mcp?apikey=${input:alphavantage-api-key}"
+    }
+  }
+}
